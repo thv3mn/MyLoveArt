@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carta Virtual</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            text-align: center;
+
+            background-color: #fce4ec;
+
+            margin: 0;
+
+            padding: 20px;
+
+        }
+
+        .container {
+
+            position: relative;
+
+            width: 300px;
+
+            margin: 50px auto;
+
+        }
+
+        .sobre {
+
+            width: 100%;
+
+            cursor: pointer;
+
+        }
+
+        .carta {
+
+            width: 100%;
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            opacity: 0;
+
+            transition: opacity 1s ease-in-out;
+
+        }
+
+        .mensaje {
+
+            display: none;
+
+            background: white;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+            margin-top: 20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <h1>¡Tienes una carta especial, cariño!</h1>
+
+    
+
+    <div class="container" onclick="abrirCarta()">
+
+        <img src="https://i.postimg.cc/q7f5TH66/5eeec1a3f124bf076b529239672bd5d9.jpg" alt="Sobre cerrado" class="sobre" id="sobre">
+
+        <img src="" alt="Carta abierta" class="carta" id="carta">
+
+    </div>
+
+
+
+    <div class="mensaje" id="mensaje">
+
+<img src="https://i.postimg.cc/ZqFy56nF/aa8f2d25a3b7a376413404917172f635.jpg" alt="Carta abierta" class="carta" id="carta">
+
+        <h2>Para ti, con mucho cariño</h2>
+
+        <p>Querida,</p>
+
+        <p>Quiero recordarte lo especial que eres para mi, no sabes lo feliz que me hace el tenerte aqui conmigo, se que cada segundo a tu lado es lo mejor, nunca te cambiará por nada en el mundo, tú eres todo lo que quiero y todo lo que siempre voy a querer, saber que cumplimos 3 años juntos, en esos tres años, nos enamoramos más cada día, nos casamos, tuvimos a nuestra pequeña Mei y pronto alguien más se unirá a nuestra familia, gracias por devolverme la felicidad con tu simple presencia, te amo</p>
+
+        <p>Con todo mi cariño,</p>
+
+        <p><strong>Elios♡</strong></p>
+
+    </div>
+
+
+
+    <script>
+
+        function abrirCarta() {
+
+            document.getElementById("sobre").style.display = "none";
+
+            document.getElementById("carta").style.opacity = "1";
+
+            setTimeout(() => {
+
+                document.getElementById("mensaje").style.display = "block";
+
+            }, 1000);
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
